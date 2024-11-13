@@ -1,2 +1,7 @@
 # docker-projects
-docker sample &amp; test projects
+# compose files
+# erpnextversion15
+# immich
+# ntfy
+# uptime-kuma
+# wordpress
