@@ -1,0 +1,13 @@
+services:
+  ntfy:
+    image: binwiederhier/ntfy
+    container_name: ntfy
+    restart: always
+    volumes:
+      - /var/cache/ntfy:/var/cache/ntfy
+      - /etc/ntfy:/etc/ntfy
+    ports:
+      - "8537:80"
+    command: serve --cache-file /var/cache/ntfy/cache.db
+    tty: true
+    stdin_open: true
