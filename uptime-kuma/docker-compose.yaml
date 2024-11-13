@@ -4,7 +4,7 @@ services:
     container_name: uptime-kuma
     restart: always
     ports:
-      - "3901:3001"
+      - "3901:3001" #change port to whatever you want (leftside: containers port | rightside: host port)
     volumes:
       - uptime-kuma:/app/data
       - /var/run/docker.sock:/var/run/docker.sock

@@ -7,7 +7,7 @@ services:
       - /var/cache/ntfy:/var/cache/ntfy
       - /etc/ntfy:/etc/ntfy
     ports:
-      - "8537:80"
+      - "8537:80" #change port to whatever you want (leftside: containers port | rightside: host port)
     command: serve --cache-file /var/cache/ntfy/cache.db
     tty: true
     stdin_open: true
